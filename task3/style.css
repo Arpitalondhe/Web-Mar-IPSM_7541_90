@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor:#000000;
+    --colorthree:#150050;
+    --colorfour:#3F0071;
+    --colortwo:#610094;
+    
+    
+    
+}
+body{
+    background-color:aqua; 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-heading{
+    text-align: center;
+    color: var(--maincolor);
+    margin-top: 2rem;
+}
+
+form{
+    width: 70%;
+    max-width: 700px;
+}
+.input-container{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+#inputBox{
+    width: 70%;
+    height: 40px;
+    border: 2px solid var(--maincolor);
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+    font-size: large;
+    background-color: rgb(248, 250, 250);
+}
+#inputBox:hover{
+    box-shadow: 0px 0px 10px 1px black;
+}
+#add{
+    margin-left: 10px;
+    font-size: large;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color:var(--maincolor);
+    color:white;
+    
+}
+#add:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 20px 1px rgb(82, 78, 78);
+
+}
+/* .list{
+        background-color: aquamarine;
+} */
+.item{
+    background-color:var(--colorthree);
+    display: flex;
+    font-size: x-large;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px 10px;
+    font-weight: bold;
+    color: white;
+}
+.item p{
+    flex-basis: 80%;
+}
+.icon-container{
+    flex-basis: 20%;
+    
+}
+.icon-container button{
+    background-color: transparent;
+    border: none;
+    font-size: x-large;
+}
+.fa-circle-check{
+    color: #95CD41;
+    cursor: pointer;
+    font-size: xx-large;
+    transition: all 0.3s;
+}
+.fa-trash-can{
+    color:#CE1F6A;
+    cursor: pointer;
+    font-size: xx-large;
+    transition: all 0.3s;
+}
+.fa-solid:hover{
+    transform: scale(1.3);
+}
+
+.hidden{
+    visibility: hidden;
+}
+.deleted-text{
+    text-decoration: line-through;
+    color: var(--maincolor);
+}
+.deleted-text span{
+    color: black;
+}
+.fade{
+    background-color:var(--colorfour);
+}
